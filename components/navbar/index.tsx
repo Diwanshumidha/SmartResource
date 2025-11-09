@@ -1,6 +1,12 @@
 "use client";
 
-import { Briefcase, Building, Menu, NotebookTextIcon } from "lucide-react";
+import {
+  Briefcase,
+  Building,
+  CircleHelpIcon,
+  Menu,
+  NotebookTextIcon,
+} from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -25,6 +31,7 @@ import {
 } from "@/components/ui/sheet";
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface MenuItem {
   title: string;
@@ -134,15 +141,13 @@ const Navbar = ({
 
   const renderMenuItem = React.useCallback(
     (item: MenuItem) => {
-      const hasChildren = item.items && item.items.length > 0;
-
-      if (hasChildren) {
+      if (item.items && item.items.length > 0) {
         return (
           <NavigationMenuItem key={item.title}>
             <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-4">
-                {item.items!.map(renderSubMenuLink)}
+                {item.items.map(renderSubMenuLink)}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -221,7 +226,7 @@ const Navbar = ({
               </span>
             </a>
 
-            <NavigationMenu>
+            <NavigationMenu viewport={false}>
               <NavigationMenuList>
                 {menu.map(renderMenuItem)}
               </NavigationMenuList>

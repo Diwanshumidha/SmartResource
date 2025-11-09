@@ -2,11 +2,9 @@
 
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
-import { Pricing } from "@/components/pricing";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import ProductsSection from "@/components/products";
-import Script from "next/script";
 import Testimonials from "@/components/testimonials";
 import FAQs from "@/components/faq";
 
