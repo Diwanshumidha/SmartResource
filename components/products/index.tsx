@@ -35,14 +35,15 @@ export default function ProductsSection() {
           animate="visible"
         >
           <motion.p
-            className="text-sm font-medium text-slate-600 mb-4"
+            className="text-sm font-medium text-slate-600 mb-4 scroll-mt-16"
             variants={itemVariants}
+            id="products"
           >
             Products
           </motion.p>
 
           <motion.h1
-            className="text-5xl font-bold text-slate-900 mb-4"
+            className="text-5xl font-bold text-slate-900 mb-4 "
             variants={itemVariants}
           >
             What we offer

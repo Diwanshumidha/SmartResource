@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ContactForm from "./contact-form";
 import { Navbar } from "@/components/navbar";
+import FullLogoIcon from "@/components/logos/full_logo";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -26,34 +27,16 @@ export default function ContactPage() {
           <div className="lg:mt-6 lg:w-80 lg:flex-none">
             <div className="flex items-start flex-col">
               <span className="sr-only">Smart</span>
-              {/* <LogoIcon className="h-8 w-auto" aria-hidden="true" /> */}
-              <span className="mt-1 text-[12px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                Powered by Smart Resource
-              </span>
+              <FullLogoIcon className="w-40" />
             </div>
 
-            <figure className="mt-10">
+            <figure className="mt-4">
               <blockquote className="text-lg/8 font-semibold text-foreground">
                 <p>
-                  “The premiere software when it comes to enhancing student
-                  learning.”
+                  “The premiere software for improving professional productivity
+                  and collaboration.”
                 </p>
               </blockquote>
-              <figcaption className="mt-10 flex gap-x-6">
-                <img
-                  alt=""
-                  src="/mike.jpg"
-                  className="size-12 flex-none rounded-full bg-gray-50"
-                />
-                <div>
-                  <div className="text-base font-semibold text-foreground">
-                    Mike Samhoury
-                  </div>
-                  <div className="text-sm/6 text-gray-600">
-                    CEO of Smart Resource
-                  </div>
-                </div>
-              </figcaption>
             </figure>
           </div>
         </div>

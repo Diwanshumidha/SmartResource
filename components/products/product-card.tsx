@@ -35,7 +35,7 @@ export default function ProductCard({
                 src={product.avatar || "/placeholder.svg"}
                 alt={product.name}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <h3 className="font-semibold text-slate-900">{product.name}</h3>

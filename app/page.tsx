@@ -3,7 +3,6 @@
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
 import { CTA } from "@/components/cta";
-import { Footer } from "@/components/footer";
 import ProductsSection from "@/components/products";
 import Testimonials from "@/components/testimonials";
 import FAQs from "@/components/faq";
@@ -15,11 +14,12 @@ export default function Home() {
       {/* <UseCases /> */}
       <Features />
       <ProductsSection />
+
       {/* <Pricing /> */}
       <FAQs />
       <Testimonials />
       <CTA />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

@@ -12,6 +12,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import Link from "next/link";
 
 interface ProductDetailProp {
   product: Product;
@@ -136,9 +137,11 @@ export default function ProductDetail({ product }: ProductDetailProp) {
 
           {/* CTA */}
           <div className="mt-4">
-            <Button className="w-full group relative bg-primary hover:bg-primary/90 text-white font-medium">
-              Learn More
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <Button asChild className="w-full group relative bg-primary hover:bg-primary/90 text-white font-medium">
+              <Link href={product.url}>
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
         </CardContent>

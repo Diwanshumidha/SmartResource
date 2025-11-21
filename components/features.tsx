@@ -41,7 +41,7 @@ export function Features() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-foreground">
+            <h2 id="features" className="text-3xl sm:text-4xl font-bold mb-6 text-foreground scroll-mt-16">
               The Ultimate Data Model for Go-to-Market Success
             </h2>
             <p className=" text-muted-foreground mb-12">

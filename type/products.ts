@@ -2,6 +2,7 @@ export interface Product {
     id: number;
     name: string;
     title: string;
+    url: string;
     avatar?: string;
     description?: string;
     icon?: React.ReactNode;

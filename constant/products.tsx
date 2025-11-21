@@ -1,15 +1,17 @@
 import { Product } from "@/type/products";
 import { Briefcase, Handshake, School } from "lucide-react";
 
+// asdasdasdasdasdasdasdasd
+
 export const products = [
   {
     id: 1,
     name: "Studygen AI",
     title:
       "AI platform designed to supercharge student learning and exam prep.",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    avatar: "/studygen.svg",
     icon: <School />,
+    url: process.env.NEXT_PUBLIC_STUDY_GEN_URL || "#",
     description: `
 Studygen AI is your intelligent learning companion, built to help students craft personalized study plans, generate smart notes, and access curated learning materials powered by AI. Whether you're preparing for competitive exams or mastering a new subject, Studygen adapts to your learning pace and style.
 
@@ -37,11 +39,11 @@ Studygen AI turns your study sessions into data-driven experiences, ensuring tha
   },
   {
     id: 2,
-    name: "Professional AI",
+    name: "Smart Work AI",
+    url: process.env.NEXT_PUBLIC_SMART_WORK_URL || "#",
     title:
       "Boost workplace productivity with intelligent AI tools for professionals.",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    avatar: "/logo.svg",
     icon: <Briefcase />,
     description: `
 Professional AI empowers individuals and teams to work smarter, not harder. It integrates seamlessly with your daily workflow — from drafting emails and generating reports to managing meetings and automating repetitive tasks. Its adaptive models learn your work patterns to deliver personalized assistance tailored to your role.
@@ -70,10 +72,10 @@ With enterprise-grade security and customization, Professional AI brings the fut
   },
   {
     id: 3,
-    name: "Business AI",
+    name: "Smart Build AI",
+    url: process.env.NEXT_PUBLIC_SMART_BUILD_URL || "#",
     title: "Data-driven intelligence for business growth and decision-making.",
-    avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    avatar: "/logo.svg",
     icon: <Handshake />,
     description: `
 Business AI delivers end-to-end intelligence for modern organizations. It helps businesses forecast trends, understand customer behavior, and automate decision-making with precision. With AI-powered analytics, leaders gain real-time visibility into operations and performance metrics across departments.

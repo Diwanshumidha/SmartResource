@@ -31,7 +31,7 @@ import {
 } from "@/components/ui/sheet";
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+import FullLogoIcon from "../logos/full_logo";
 
 interface MenuItem {
   title: string;
@@ -94,29 +94,29 @@ const Navbar = ({
       url: "#",
       items: [
         {
-          title: "Professional AI",
+          title: "Smart Work",
           description: "AI-powered solutions for Professionals",
           icon: <Briefcase className="size-5 shrink-0" />,
-          url: "#",
+          url: process.env.NEXT_PUBLIC_SMART_WORK_URL || "#",
         },
         {
-          title: "Business AI",
+          title: "Smart Build",
           description: "AI-powered solutions for Businesses",
           icon: <Building className="size-5 shrink-0" />,
-          url: "#",
+          url: process.env.NEXT_PUBLIC_SMART_BUILD_URL || "#",
         },
         {
           title: "StudyGen AI",
           description: "AI-powered solutions for Students",
           icon: <NotebookTextIcon className="size-5 shrink-0" />,
-          url: "#",
+          url: process.env.NEXT_PUBLIC_STUDY_GEN_URL || "#",
         },
       ],
     },
     { title: "Contact Us", url: "/contact" },
     { title: "Blog", url: "/blog" },
   ],
-  actions = [{ title: "Get Started", url: "#", variant: "default" }],
+  actions = [{ title: "Get Started", url: "/#products", variant: "default" }],
 }: Navbar1Props) => {
   const renderSubMenuLink = React.useCallback(
     (item: MenuItem) => (
@@ -215,15 +215,12 @@ const Navbar = ({
         {/* Desktop */}
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
-            <a href={logo.url} className="flex items-center gap-2">
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-h-8 rounded-full object-cover dark:invert"
-              />
+            <a href={logo.url} className="flex h-8 shrink-0 items-center gap-2">
+              {/* <LogoIcon />
               <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}
-              </span>
+              </span> */}
+              <FullLogoIcon className="w-[110px]" />
             </a>
 
             <NavigationMenu viewport={false}>
@@ -251,11 +248,7 @@ const Navbar = ({
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-              <img
-                src={logo.src}
-                className="max-h-8 dark:invert"
-                alt={logo.alt}
-              />
+              <FullLogoIcon className="w-[110px]" />
             </a>
 
             <Sheet>

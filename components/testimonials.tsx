@@ -49,12 +49,10 @@ const Testimonials = () => {
       </motion.div>
 
       <Script
-        src="https://widget.senja.io/widget/8a79cd7b-43d0-4a2c-bd36-b7bd6348f788/platform.js"
+        src={process.env.NEXT_PUBLIC_TESTIMONIALS_SCRIPT_URL}
         type="text/javascript"
         async
         onLoad={() => {
-          console.log("Senja widget loaded");
-          // run your custom logic here
           const watermark = document.getElementsByClassName("sj-powered-by")[0];
           watermark.classList.add("sr-only");
         }}

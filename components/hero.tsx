@@ -3,7 +3,17 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Navbar } from "./navbar";
+import Link from "next/link";
+
+export const GradientText = ({ children }: { children: string }) => {
+  return (
+    <>
+      <span className="bg-linear-to-r from-[#008fe5] via-[#00a5d0] to-[#00c6a8]  bg-clip-text text-transparent font-bold text-3xl sm:text-5xl">
+        {children}
+      </span>
+    </>
+  );
+};
 
 export function Hero() {
   const containerVariants = {
@@ -49,8 +59,8 @@ export function Hero() {
         </motion.div>
         {/* Main headline */}
         <motion.h1 className="text-2xl sm:text-4xl text-balance lg:text-6xl font-bold mb-6 ">
-          Smart Resource <span className="font-style">AI-Powered </span>{" "}
-          Precision for Every Task
+          Smart Resource <GradientText>AI-Powered</GradientText> Precision for
+          Every Task
         </motion.h1>
         {/* Subheadline */}
         <motion.p className="text-sm sm:text-lg text-balance text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -61,18 +71,26 @@ export function Hero() {
         {/* CTA Buttons */}
         <motion.div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
+            asChild
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-6 text-lg rounded-full"
           >
-            Get Started Free
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <Link href="#products">
+              Get Started Free
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="border-border px-8 py-6 text-lg rounded-full"
           >
-            How It Works
+            <Link
+              href={process.env.NEXT_PUBLIC_APPOINTMENT_URL || "#"}
+              target="_blank"
+            >
+              Book a Demo
+            </Link>
           </Button>
         </motion.div>
       </motion.div>

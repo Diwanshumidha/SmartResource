@@ -24,7 +24,7 @@ export default function FAQs() {
               <p className="text-muted-foreground mt-4">
                 Can't find what you're looking for? Contact our{" "}
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-primary font-medium hover:underline"
                 >
                   customer support team
