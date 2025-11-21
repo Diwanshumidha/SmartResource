@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import FullLogoIcon from "./logos/full_logo";
+import FullLogoIcon from "@/components/logos/full_logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();

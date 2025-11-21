@@ -1,5 +1,5 @@
-import { APP_NAME } from "@/lib/constant/name";
 import { Metadata } from "next";
+const APP_NAME = "Smart Resource";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
