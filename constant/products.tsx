@@ -78,11 +78,11 @@ With enterprise-grade security and customization, Professional AI brings the fut
     avatar: "/logo.svg",
     icon: <Handshake />,
     description: `
-Business AI delivers end-to-end intelligence for modern organizations. It helps businesses forecast trends, understand customer behavior, and automate decision-making with precision. With AI-powered analytics, leaders gain real-time visibility into operations and performance metrics across departments.
+Smart Build AI delivers end-to-end intelligence for modern organizations. It helps businesses forecast trends, understand customer behavior, and automate decision-making with precision. With AI-powered analytics, leaders gain real-time visibility into operations and performance metrics across departments.
 
-From sales automation to market prediction and customer sentiment analysis, Business AI provides a unified layer of intelligence across your organization. It integrates seamlessly with your CRM, ERP, and marketing tools, ensuring every decision is backed by actionable insights.
+From sales automation to market prediction and customer sentiment analysis, Smart Build AI provides a unified layer of intelligence across your organization. It integrates seamlessly with your CRM, ERP, and marketing tools, ensuring every decision is backed by actionable insights.
 
-Designed for scalability and security, Business AI empowers companies to innovate faster, cut operational inefficiencies, and stay ahead in competitive markets.
+Designed for scalability and security, Smart Build AI empowers companies to innovate faster, cut operational inefficiencies, and stay ahead in competitive markets.
     `,
     features: [
       "Predictive analytics and forecasting",
@@ -96,7 +96,7 @@ Designed for scalability and security, Business AI empowers companies to innovat
     reviews: 963,
     testimonial: {
       quote:
-        "Our decision-making has become faster and far more data-driven — Business AI paid for itself within the first month.",
+        "Our decision-making has become faster and far more data-driven — Smart Build AI paid for itself within the first month.",
       author: "David Chen",
       role: "COO, NovaTech Solutions",
       avatar:

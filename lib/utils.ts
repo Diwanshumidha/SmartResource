@@ -104,6 +104,6 @@ export const fileToBase64 = (file: File): Promise<string> => {
 };
 
 export const AbsoluteUrl = (path: string) => {
-    const NEXT_PUBLIC_APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
-    return `${NEXT_PUBLIC_APP_URL}/${path}`
+    const NEXT_PUBLIC_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+    return `${NEXT_PUBLIC_BASE_URL}/${path}`
 }
