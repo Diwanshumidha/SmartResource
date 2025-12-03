@@ -4,6 +4,7 @@ import {
   Briefcase,
   Building,
   CircleHelpIcon,
+  Handshake,
   Menu,
   NotebookTextIcon,
 } from "lucide-react";
@@ -102,7 +103,7 @@ const Navbar = ({
         {
           title: "Smart Build",
           description: "AI-powered solutions for Businesses",
-          icon: <Building className="size-5 shrink-0" />,
+          icon: <Handshake className="size-5 shrink-0" />,
           url: process.env.NEXT_PUBLIC_SMART_BUILD_URL || "#",
         },
         {

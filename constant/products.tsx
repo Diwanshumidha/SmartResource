@@ -1,5 +1,5 @@
 import { Product } from "@/type/products";
-import { Briefcase, Handshake, School } from "lucide-react";
+import { Book, Briefcase, Handshake, NotebookTextIcon, School } from "lucide-react";
 
 // asdasdasdasdasdasdasdasd
 
@@ -10,7 +10,7 @@ export const products = [
     title:
       "AI platform designed to supercharge student learning and exam prep.",
     avatar: "/studygen.svg",
-    Icon: ({className}) => <School className={className}/>,
+    Icon: ({className}) => <NotebookTextIcon className={className}/>,
     url: process.env.NEXT_PUBLIC_STUDY_GEN_URL || "#",
     description: `
 Studygen AI is your intelligent learning companion, built to help students craft personalized study plans, generate smart notes, and access curated learning materials powered by AI. Whether you're preparing for competitive exams or mastering a new subject, Studygen adapts to your learning pace and style.
