@@ -8,7 +8,7 @@ import Link from "next/link";
 export const GradientText = ({ children }: { children: string }) => {
   return (
     <>
-      <span className="bg-linear-to-r from-[#008fe5] via-[#00a5d0] to-[#00c6a8]  bg-clip-text text-transparent font-bold text-3xl sm:text-5xl">
+      <span className="bg-linear-to-r from-[#008fe5] via-[#00a5d0] to-[#00c6a8]  bg-clip-text text-transparent font-bold text-3xl sm:text-4xl xl:text-[50px]">
         {children}
       </span>
     </>
@@ -76,8 +76,7 @@ export function Hero() {
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-6 text-lg rounded-full"
           >
             <Link href="#products">
-              Get Started Free
-              <ArrowRight className="ml-2 w-5 h-5" />
+              7 Days free trial
             </Link>
           </Button>
           <Button

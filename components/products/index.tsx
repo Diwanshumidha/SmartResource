@@ -25,7 +25,7 @@ export default function ProductsSection() {
   const selectedProduct = products.find((t) => t.id === selectedId)!;
 
   return (
-    <div className="bg-background py-20">
+    <div className="bg-background py-20 px-4 xl:px-0">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div

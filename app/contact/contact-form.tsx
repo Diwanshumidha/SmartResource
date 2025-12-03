@@ -65,7 +65,7 @@ const ContactForm = () => {
           Message
         </label>
         <div className="mt-2.5">
-          <Textarea name="message" placeholder="Enter your message here ..." rows={4} />
+          <Textarea name="message" placeholder="Enter your message here ..." rows={5} />
         </div>
       </div>
     </div>

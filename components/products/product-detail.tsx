@@ -33,14 +33,8 @@ export default function ProductDetail({ product }: ProductDetailProp) {
 
         <CardHeader>
           <div className="flex items-center gap-3">
-            {product.avatar && (
-              <Image
-                src={product.avatar || "/placeholder.svg"}
-                alt={`${product.name} logo`}
-                width={36}
-                height={36}
-                className="object-contain rounded-md"
-              />
+            {product.Icon && (
+              <product.Icon className="size-7" />
             )}
             <div>
               <CardTitle className="text-base font-semibold leading-tight">

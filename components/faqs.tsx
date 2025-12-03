@@ -2,7 +2,7 @@ import { faqs } from "@/constant/faq";
 
 export default function FAQs() {
   return (
-    <section className="scroll-py-16 py-16 md:scroll-py-32 md:py-32">
+    <section className="scroll-py-16 py-24 md:scroll-py-32 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid gap-y-12 px-2 lg:grid-cols-[1fr_auto]">
           <div className="text-center lg:text-left ">

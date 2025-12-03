@@ -5,7 +5,7 @@ export interface Product {
     url: string;
     avatar?: string;
     description?: string;
-    icon?: React.ReactNode;
+    Icon?: (props: {className: string}) => React.ReactNode;
     features: string[];
     tags?: string[];
     reviews?: number;

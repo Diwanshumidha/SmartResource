@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="/faqs" className="hover:text-foreground transition">
-                  Faqs
+                  FAQs
                 </a>
               </li>
             </ul>

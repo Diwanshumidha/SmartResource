@@ -15,6 +15,18 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 } satisfies Variants;
 
+const getIdFromUrl = (url: string) => {
+  const urlObj = new URL(url);
+
+  // pathname is: "/widget/f1fffcf6-156d-4eeas-a119-80d7abf801bc/platform.js"
+  const pathParts = urlObj.pathname.split('/');
+
+  // The ID is usually at index 2 because the path starts with a /
+  const id = pathParts[2];
+
+  return id
+}
+
 const Testimonials = () => {
   return (
     <div className="bg-card/50 pt-20">
@@ -54,13 +66,16 @@ const Testimonials = () => {
         async
         onLoad={() => {
           const watermark = document.getElementsByClassName("sj-powered-by")[0];
-          watermark.classList.add("sr-only");
+          if (watermark) {
+            watermark.classList.add("sr-only");
+          }
         }}
       ></Script>
 
+
       <div
         className="senja-embed w-full py-10 px-5 mx-auto"
-        data-id="8a79cd7b-43d0-4a2c-bd36-b7bd6348f788"
+        data-id={getIdFromUrl(process.env.NEXT_PUBLIC_TESTIMONIALS_SCRIPT_URL || "")}
         // data-mode="shadow"
         data-lazyload="false"
         style={{ width: "100%" }}

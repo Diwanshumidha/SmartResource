@@ -28,21 +28,18 @@ export default function ProductCard({
       )}
     >
       <div className="flex items-start justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <div className="text-left">
-            <div className="relative w-10 mb-1 h-10 rounded-full overflow-hidden">
-              <Image
-                src={product.avatar || "/placeholder.svg"}
-                alt={product.name}
-                fill
-                className="object-contain"
-              />
-            </div>
+
+        <div className="text-left space-y-2">
+          <div className="text-4xl">
+           {product.Icon ? product.Icon({className: "size-7"}) : null}
+          </div>
+          <div>
+
             <h3 className="font-semibold text-slate-900">{product.name}</h3>
             <p className="text-sm text-slate-600">{product.title}</p>
           </div>
         </div>
-        <div className="text-2xl">{product.icon}</div>
+
       </div>
     </motion.button>
   );

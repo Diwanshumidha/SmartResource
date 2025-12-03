@@ -10,7 +10,7 @@ export const products = [
     title:
       "AI platform designed to supercharge student learning and exam prep.",
     avatar: "/studygen.svg",
-    icon: <School />,
+    Icon: ({className}) => <School className={className}/>,
     url: process.env.NEXT_PUBLIC_STUDY_GEN_URL || "#",
     description: `
 Studygen AI is your intelligent learning companion, built to help students craft personalized study plans, generate smart notes, and access curated learning materials powered by AI. Whether you're preparing for competitive exams or mastering a new subject, Studygen adapts to your learning pace and style.
@@ -44,7 +44,7 @@ Studygen AI turns your study sessions into data-driven experiences, ensuring tha
     title:
       "Boost workplace productivity with intelligent AI tools for professionals.",
     avatar: "/logo.svg",
-    icon: <Briefcase />,
+    Icon: ({className}) => <Briefcase className={className}/>,
     description: `
 Professional AI empowers individuals and teams to work smarter, not harder. It integrates seamlessly with your daily workflow — from drafting emails and generating reports to managing meetings and automating repetitive tasks. Its adaptive models learn your work patterns to deliver personalized assistance tailored to your role.
 
@@ -76,7 +76,7 @@ With enterprise-grade security and customization, Professional AI brings the fut
     url: process.env.NEXT_PUBLIC_SMART_BUILD_URL || "#",
     title: "Data-driven intelligence for business growth and decision-making.",
     avatar: "/logo.svg",
-    icon: <Handshake />,
+    Icon: ({className}) => <Handshake className={className}/>,
     description: `
 Smart Build AI delivers end-to-end intelligence for modern organizations. It helps businesses forecast trends, understand customer behavior, and automate decision-making with precision. With AI-powered analytics, leaders gain real-time visibility into operations and performance metrics across departments.
 
