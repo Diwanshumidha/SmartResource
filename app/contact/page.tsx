@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import ContactForm from "./contact-form";
-import { Navbar } from "@/components/navbar";
 import FullLogoIcon from "@/components/logos/full_logo";
 
 export const metadata: Metadata = {
