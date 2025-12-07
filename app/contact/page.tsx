@@ -34,7 +34,7 @@ export default function ContactPage() {
             <figure className="mt-4">
               <blockquote className="text-lg/8 font-semibold text-foreground">
                 <p>
-                  “The AI platform that adapts to you streamlining work, learning, and collaboration with precision and ease.”
+                  “Your Intelligent Operating System for Work, Learning, and Life.”
                 </p>
               </blockquote>
             </figure>

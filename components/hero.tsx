@@ -76,7 +76,7 @@ export function Hero() {
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-6 text-lg rounded-full"
           >
             <Link href="#products">
-              7 Days free trial
+              Try Smart Resource Free 
             </Link>
           </Button>
           <Button
